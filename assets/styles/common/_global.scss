@@ -1,0 +1,38 @@
+*{
+    font-family: $openSans;
+}
+body, .ipt, select, textarea{
+    color: $texto;
+    font-size: rem(14);
+}
+a:hover{ text-decoration:none;}
+p{ margin:0 0 15px;}
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.show { display:block; }
+.hide { display:none; }
+.fl { float:left;display:inline; }
+.fr { float:right;display:inline; }
+.cb { clear: both; }
+ul{ list-style: none; margin: 0; padding: 0}
+h1, h2, h3, h4, h5, h6{font-family: $frescoSans;}
+article, .container, .row{height: 100%;}
+.conteudo{
+    padding-top: 103px;
+}
+:focus{outline: none !important;}
+::-webkit-input-placeholder{
+  color: #cf820c !important;
+  opacity: 1;
+}
+:-ms-input-placeholder,{
+  color: #cf820c !important;
+  opacity: 1;
+}
+::placeholder{
+  color: #cf820c !important;
+  opacity: 1;
+}
+
+
+

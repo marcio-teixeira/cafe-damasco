@@ -1,0 +1,230 @@
+footer{
+    .footerContent{
+        background: url(../images/bg-footer.png) repeat-y center top;
+        .bgFooter{
+            background: -moz-linear-gradient(top, rgba(61,25,24,1) 0%, rgba(61,25,24,0) 15%, rgba(61,25,24,0) 85%, rgba(61,25,24,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(61,25,24,1) 0%,rgba(61,25,24,0) 15%,rgba(61,25,24,0) 85%,rgba(61,25,24,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(61,25,24,1) 0%,rgba(61,25,24,0) 15%,rgba(61,25,24,0) 85%,rgba(61,25,24,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#803d1918', endColorstr='#803d1918',GradientType=0 ); /* IE6-9 */
+            padding: 50px 0;
+        }
+        .menuFooter{
+            border-bottom: 1px solid $amareloMenu;
+            padding-bottom: 20px;
+            li{
+                margin-right: 20px;
+                &:last-child{margin-right: 0;}
+                a{
+                    color: $amareloMenu;
+                    font-family: $frescoSans;
+                    font-size: rem(16);
+                    text-transform: uppercase;
+                    @include transition();
+                    &:hover{
+                        color: $amareloMenuHover;
+                    }
+                }
+                .sub-menu{
+                    padding-left: 10px;
+                    li{
+                        a{
+                            color: $branco;
+                            font-family: $openSans;
+                            font-size: rem(14);
+                            text-transform: none;
+                            @include transition();
+                            &:hover{
+                                color: $amareloMenu;
+                            }
+                            &:before{
+                                content:"•";
+                                padding-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menuSuporte{
+            margin-top: 15px;
+            li{
+                margin-right: 20px;
+                &:last-child{margin-right: 0;}
+                a{
+                    color: $branco;
+                    font-family: $frescoSans;
+                    font-size: rem(12);
+                    text-transform: uppercase;
+                    @include transition();
+                    &:hover{
+                        color: $amareloMenu;
+                    }
+                }
+            }
+        }
+        .linkReceitasFooter{
+            float: right;
+            @include transition();
+            span{
+                color: $amareloMenu;
+                display: block;
+                font-family: $frescoSansL;
+                font-size: rem(16);
+                padding-top: 5px;
+                text-transform: uppercase;
+            }
+            &:hover{
+                span{
+                    color: $branco;
+                }
+            }
+        }
+    }
+    .assinatura{
+        background: $marrom;
+        padding: 20px 0;
+        overflow: hidden;
+        span{
+            color: $branco;
+            font-size: rem(12);
+        }
+        .logoRS{
+            float: right;
+        }
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+@media (max-width: 575px){
+    .menuFooter{
+        .nav{
+            display: block;
+            li{
+                display: block;
+                float: none;    
+                margin: 0 auto 5px;
+                text-align: center;
+                .sub-menu{
+                    padding-left: 0;
+                    li{
+                        margin: 0 auto 5px;
+                        a{
+                            &:before{
+                                content:"" !important;
+                                padding-right: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menuSuporte{
+        padding-bottom: 30px;
+        .nav{
+            display: block;
+            li{
+                display: block;
+                float: none;    
+                margin: 0 auto 5px;
+                text-align: center;
+            }
+        }
+    }
+    .assinatura{
+        text-align: center;
+        span{
+            display: block;
+            margin: 5px auto 30px;
+        }
+        .logoRS{
+            float: right;
+        }
+    }
+    footer{
+        .footerContent{
+            .linkReceitasFooter{
+                float: none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .menuFooter{
+        .nav{
+            display: block;
+            li{
+                display: block;
+                float: none;    
+                margin: 0 auto 5px;
+                text-align: center;
+                .sub-menu{
+                    padding-left: 0;
+                    li{
+                        margin: 0 auto 5px;
+                        a{
+                            &:before{
+                                content:"" !important;
+                                padding-right: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menuSuporte{
+        padding-bottom: 30px;
+        .nav{
+            display: block;
+            li{
+                display: block;
+                float: none;    
+                margin: 0 auto 5px;
+                text-align: center;
+            }
+        }
+    }
+    footer{
+        .footerContent{
+            .linkReceitasFooter{
+                float: none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*////////////////////////////////////////////////////*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #bannerHome{
+        background: none !important;
+        height: auto;
+    }
+}
+
+/*/////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1200px) {
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 1500px) {
+
+}
